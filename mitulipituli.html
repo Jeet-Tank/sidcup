@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #body{
+            height: 100vh;
+            position: relative;
+        }
+        #mainheart{
+            background-image: url(IMG-20220528-WA0013.jpg);
+            background-position:center;
+            background-size: cover;
+            height: 600px;
+            width: 600px;
+            background-color: crimson;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+        }
+        #mainheart:hover{
+            transform: rotate(450deg);
+        }     
+    </style>
+    <title>Meri Mitthu ki photu</title>
+</head>
+<body>
+    <div id="mainheart"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        gsap.from("#mainheart",{
+            left:-700,
+            duration:2,
+            scale:0.6,
+            rotate:360,
+            delay:3,
+        })
+    </script>
+</body>
+</html>
